@@ -1,3 +1,5 @@
+import { Validations } from "./validations.js"
+
 export class Objective {
     constructor (name, why, matter){
         this._name = name
@@ -14,8 +16,7 @@ export class Objective {
         return this._why
     }
     set why(why){
-        if( !(typeof why === 'string'))
-            throw Error("Property should be type string.")
+        Validations.isString(why)
         this._why = why
     }
 
@@ -28,7 +29,7 @@ export class Objective {
         else if(matter > 5)
             throw Error("Property should be smaller than 5.")
         else if (matter < 0)
-            throw Error("Property should be smaller than 5.")
+            throw Error("Property should be greater than 0.")
         this._matter = matter
     }
 
@@ -36,8 +37,7 @@ export class Objective {
         return this._check
     }
     set check(bool){
-        if(bool != 0 && bool != 1)
-            throw Error("Property should be boolean.")
+        Validations.isBool(bool)
         this._check = bool
     }
 }
