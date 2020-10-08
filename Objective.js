@@ -44,4 +44,5 @@ export class Objective {
         Validations.isBool(bool)
         this._check = bool
     }
+
 }
