@@ -2,6 +2,13 @@ import { Validations } from "./validations.js"
 
 export class Objective {
     constructor (name, why, matter){
+
+        Validations.isString(name)
+        Validations.isString(why)
+        Validations.isInteger(matter)
+        Validations.greaterThan(matter,5)
+        Validations.smallerThan(matter,0)
+
         this._name = name
         this._why = why
         this._matter = matter
