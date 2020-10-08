@@ -2,6 +2,10 @@ import { Validations } from "./validations.js"
 
 export class Goal{
     constructor(time, amount){
+        Validations.isInteger(time)
+        Validations.smallerThan(time,0)
+        Validations.smallerThan(amount,0)
+        
         this._time = time
         this._amount = amount
     }
