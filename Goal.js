@@ -1,3 +1,5 @@
+import { Validations } from "./validations.js"
+
 export class Goal{
     constructor(time, amount){
         this._time = time
@@ -8,10 +10,8 @@ export class Goal{
         return this._time
     }
     set time(time){
-        if (! Number.isInteger(matter))
-            throw Error("Property should be type integer.")
-        else if (matter < 0)
-            throw Error("Property should be greater than 0.")
+        Validations.isInteger(time)
+        Validations.smallerThan(time,0)
         this._time = time
     }
 
@@ -19,8 +19,7 @@ export class Goal{
         return this._amount
     }
     set amount(amount){
-        if (amount < 0)
-            throw Error("Property should be greater than 0.")
+        Validations.smallerThan(amount,0)
         this._amount = amount
     }
 }
