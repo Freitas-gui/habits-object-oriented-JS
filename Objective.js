@@ -24,12 +24,9 @@ export class Objective {
         return this._matter
     }
     set matter(matter){
-        if (! Number.isInteger(matter))
-            throw Error("Property should be type integer.")
-        else if(matter > 5)
-            throw Error("Property should be smaller than 5.")
-        else if (matter < 0)
-            throw Error("Property should be greater than 0.")
+        Validations.isInteger(matter)
+        Validations.greaterThan(matter,5)
+        Validations.smallerThan(matter,0)
         this._matter = matter
     }
 

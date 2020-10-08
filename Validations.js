@@ -22,14 +22,14 @@ export class Validations{
 
     //Start Comparation
     static greaterThan(smaller, greater){
-        if (smaller < greater)
-            throw Error(`Property should be greater than ${greater}.`)
+        if (smaller > greater)
+            throw Error(`Property can't be smaller than ${greater}.`)
         return true
     }
 
-    static smallerThan(smaller, greater){
-        if (smaller > greater)
-            throw Error(`Property should be smaller than ${smaller}.`)
+    static smallerThan(greater, smaller){
+        if (greater < smaller)
+            throw Error(`Property can't be greater than ${smaller}.`)
         return true
     }
     //End Comparation
