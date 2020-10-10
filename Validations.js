@@ -33,4 +33,10 @@ export class Validations{
         return true
     }
     //End Comparation
+
+    static differentTypeObjectOfList(init, add){
+        if(Object.getPrototypeOf(init) != Object.getPrototypeOf(add))
+            throw Error ("This list can receiver only 1 type of object")
+        return true
+    }
 }
