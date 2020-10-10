@@ -1,6 +1,7 @@
 import { Habit } from "./Habit.js"
 import { Objective } from "./Objective.js"
 import { Validations } from "./validations.js"
+import {List} from "./List.js"
 
 export class Goal extends Objective{
     constructor(name, why, matter, time, amount){
@@ -12,7 +13,8 @@ export class Goal extends Objective{
         this._time = time
         this._amount = amount
         
-        this._habit = new Habit()
+        this._habit = new List()
+        
     }
 
     get time(){
@@ -37,8 +39,7 @@ export class Goal extends Objective{
         return objective
     }
 
-    set habit(habit){
-        
-        this._time = time
+    get habit(){ 
+        return this._habit
     }
 }

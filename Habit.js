@@ -1,11 +1,11 @@
 import { Validations } from "./validations.js"
 
-export class Goal{
+export class Habit{
     constructor(name, trigger, routine, reward, good){
         Validations.isString(name)
         Validations.isString(trigger)
         Validations.isString(routine)
-        Validations.isInteger(reward)
+        Validations.isString(reward)
         Validations.isBool(good)
         this._name = name
         this._trigger = trigger 

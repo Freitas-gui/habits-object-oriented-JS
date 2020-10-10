@@ -1,4 +1,4 @@
-function List(capacity) {
+export function List(capacity) {
     var collection = [];
 
     if (capacity != null) {
