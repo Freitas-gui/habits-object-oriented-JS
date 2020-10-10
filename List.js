@@ -27,7 +27,10 @@ export function List(capacity) {
 
     ///Adds an object to the end of the Collections.
     this.Add = function (item) {
-        collection[collection.length] = item;
+        if(collection.length > 0)
+            if(Object.getPrototypeOf(item) != Object.getPrototypeOf(collection[0]))
+                throw "This list can receiver only 1 type of object"
+        collection[collection.length] = item
     }
 
     ///Adds the elements of the specified collection to the end of the Collections.

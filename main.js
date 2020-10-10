@@ -6,10 +6,12 @@ const goalIngles = new Goal("Falar ingles fluente", "Para viajar o mundo, podend
 const goal2 = new Goal("nana", "creue", 5, 13, 3)
 
 const habitTeste = new Habit("lala", "trigger", "routine", "reward", 0)
+const habitTesteeee = new Habit("aaaa", "bbbb", "cccc", "dddd", 1)
 
-goalIngles.habit.Add("habitTeste222")
-goalIngles.habit.Add("habitTeste")
+goalIngles.habit.Add(habitTesteeee)
+goalIngles.habit.Add(habitTeste)
 
-console.log(Object.getPrototypeOf(goalIngles) === Object.getPrototypeOf(goal2))
+console.log(goalIngles.habit.GetItem(0))
+console.log(goalIngles.habit.GetItem(1))
 
 
