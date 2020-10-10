@@ -40,7 +40,7 @@ export function List(capacity) {
         for (var i = 0 ; i < items.Count() ; i++) {
             item = items.GetItem(i)
             Validations.differentTypeObjectOfList(collection[0], item)
-            ollection[collection.length] = item
+            collection[collection.length] = item
         }
     }
 
@@ -136,5 +136,9 @@ export function List(capacity) {
         }
 
         return newList
+    }
+
+    this.GetCollection = function(){
+        return collection
     }
 }
