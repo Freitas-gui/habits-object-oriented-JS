@@ -1,3 +1,4 @@
+import { Habit } from "./Habit.js"
 import { Objective } from "./Objective.js"
 import { Validations } from "./validations.js"
 
@@ -10,8 +11,8 @@ export class Goal extends Objective{
         super(name, why, matter)
         this._time = time
         this._amount = amount
-
         
+        this._habit = new Habit()
     }
 
     get time(){
@@ -34,5 +35,10 @@ export class Goal extends Objective{
     get objective(){
         const objective = new Objective(this._name, this._why, this._matter)
         return objective
+    }
+
+    set habit(habit){
+        
+        this._time = time
     }
 }

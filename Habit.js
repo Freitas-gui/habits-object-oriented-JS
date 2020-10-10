@@ -1,4 +1,4 @@
-import { Validations } from "./validations"
+import { Validations } from "./validations.js"
 
 export class Goal{
     constructor(name, trigger, routine, reward, good){

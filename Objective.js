@@ -12,7 +12,7 @@ export class Objective {
         this._name = name
         this._why = why
         this._matter = matter
-        this._check = 0
+        this._done = 0
     }
 
     get name(){
@@ -37,12 +37,12 @@ export class Objective {
         this._matter = matter
     }
 
-    get check(){
-        return this._check
+    get done(){
+        return this._done
     }
-    set check(bool){
+    set done(bool){
         Validations.isBool(bool)
-        this._check = bool
+        this._done = bool
     }
 
 }
