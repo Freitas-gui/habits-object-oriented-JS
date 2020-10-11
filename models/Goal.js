@@ -1,6 +1,6 @@
 import { Objective } from "./Objective.js"
-import { Validations } from "./validations.js"
-import {List} from "./List.js"
+import { Validations } from "../useful/validations.js"
+import {List} from "../useful/List.js"
 
 export class Goal extends Objective{
     constructor(name, why, matter, time, amount){

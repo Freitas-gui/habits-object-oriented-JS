@@ -1,6 +1,6 @@
-import { Goal } from "./Goal.js"
-import { Habit } from "./Habit.js"
-import {Control} from "./Control.js"
+import { Goal } from "./models/Goal.js"
+import { Habit } from "./models/Habit.js"
+import {Control} from "./models/Control.js"
 
 const goalIngles = new Goal("Falar ingles fluente", "Para viajar o mundo, podendo conversar com pessoas. Além de interagir com conteúdo de + qualidade", 4, 2023, 15)
 

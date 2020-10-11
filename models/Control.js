@@ -1,5 +1,5 @@
-import { List } from "./List.js"
-import { Validations } from "./validations.js"
+import { List } from "../useful/List.js"
+import { Validations } from "../useful/validations.js"
 
 export class Control{
     constructor(){

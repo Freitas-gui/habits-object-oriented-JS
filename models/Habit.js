@@ -1,5 +1,5 @@
-import { Validations } from "./validations.js"
-import {List} from "./List.js"
+import { Validations } from "../useful/validations.js"
+
 
 export class Habit{
     constructor(name, trigger, routine, reward, good){

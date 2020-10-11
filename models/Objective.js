@@ -1,4 +1,4 @@
-import { Validations } from "./validations.js"
+import { Validations } from "../useful/validations.js"
 
 export class Objective {
     constructor (name, why, matter){
