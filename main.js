@@ -12,10 +12,11 @@ goalIngles.habit.Add(habitAlura)
 goalIngles.habit.Add(habitConversarZap)
 
 const control = new Control()
-control.frequency.Add(false)
+control.add(false)
+control.add(true)
+control.add(false)
 
-
-console.log(control.frequency)
+console.log(control.proportion())
 
 
 
