@@ -13,7 +13,6 @@ export class Habit{
         this._routine = routine
         this._reward = reward
         this._good = good
-        //this._controll = new List()
     }
 
     get name(){

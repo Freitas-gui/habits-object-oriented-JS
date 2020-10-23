@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Freitas-gui/habits-object-oriented-JS/issues"
   },
-  "homepage": "https://github.com/Freitas-gui/habits-object-oriented-JS#readme"
+  "homepage": "https://github.com/Freitas-gui/habits-object-oriented-JS#readme",
+  "dependencies": {
+    "confirm": "^0.1.1",
+    "level-path": "^1.0.0",
+    "prompt": "^1.0.0",
+    "prompts": "^2.3.2"
+  }
 }

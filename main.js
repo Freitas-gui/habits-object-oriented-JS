@@ -1,3 +1,6 @@
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+
 import { Goal } from "./models/Goal.js"
 import { Habit } from "./models/Habit.js"
 import {Control} from "./models/Control.js"
@@ -16,7 +19,5 @@ control.add(false)
 control.add(true)
 control.add(false)
 
-console.log(control.proportion())
-
-
+const prompt = require('prompt');
 
